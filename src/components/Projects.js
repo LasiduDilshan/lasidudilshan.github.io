@@ -11,6 +11,9 @@ function Projects() {
         <li>
           <strong>Project 2:</strong> Description here.
         </li>
+        <li>
+          <strong>Project 2:</strong> Description here.
+        </li>
       </ul>
     </section>
   );
