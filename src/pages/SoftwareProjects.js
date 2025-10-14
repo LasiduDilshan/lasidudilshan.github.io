@@ -1,6 +1,22 @@
 import React from "react";
 import "./SoftwareProjects.css";
 
+// Import project images
+import slPaddy from "../assets/images/projects/software/sl_paddy.jpg";
+import dailyReadNest from "../assets/images/projects/software/daily_read_nest.jpg";
+import fireMonitoring from "../assets/images/projects/software/fire_monitoring.jpg";
+import flowerTrading from "../assets/images/projects/software/flower_trading.jpg";
+import medibox from "../assets/images/projects/software/medibox.jpg";
+
+// Create image mapping
+const projectImages = {
+  sl_paddy: slPaddy,
+  daily_read_nest: dailyReadNest,
+  fire_monitoring: fireMonitoring,
+  flower_trading: flowerTrading,
+  medibox: medibox,
+};
+
 const SoftwareProjects = () => {
   const projects = [
     {
@@ -195,11 +211,17 @@ const SoftwareProjects = () => {
             {projects.map((project, index) => (
               <div key={index} className="project-card">
                 <div className="project-image">
-                  <div className="image-placeholder">
-                    <div className="image-overlay">
-                      <p>Project Screenshot</p>
-                      <p className="image-key">Image key: {project.imageKey}</p>
-                      <p className="image-specs">Recommended: 400x250px</p>
+                  <div className="project-image-container">
+                    <img
+                      src={projectImages[project.imageKey]}
+                      alt={project.title}
+                      className="project-img"
+                    />
+                    <div className="project-image-overlay">
+                      <div className="overlay-content">
+                        <h4>{project.title}</h4>
+                        <p>{project.duration}</p>
+                      </div>
                     </div>
                   </div>
                   <div className="project-links">

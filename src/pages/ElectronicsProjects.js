@@ -1,6 +1,26 @@
 import React from "react";
 import "./ElectronicsProjects.css";
 
+// Import project images
+import sdrProject from "../assets/images/projects/electronics/sdr_project.jpg";
+import bmsProject from "../assets/images/projects/electronics/bms_project.jpg";
+import amplifierProject from "../assets/images/projects/electronics/amplifier_project.jpg";
+import uartProject from "../assets/images/projects/electronics/uart_project.jpg";
+import gmmProject from "../assets/images/projects/electronics/gmm_project.jpg";
+import digitalCircuits from "../assets/images/projects/electronics/digital_circuits.jpg";
+import waterDetector from "../assets/images/projects/electronics/water_detector.jpg";
+
+// Create image mapping
+const projectImages = {
+  sdr_project: sdrProject,
+  bms_project: bmsProject,
+  amplifier_project: amplifierProject,
+  uart_project: uartProject,
+  gmm_project: gmmProject,
+  digital_circuits: digitalCircuits,
+  water_detector: waterDetector,
+};
+
 const ElectronicsProjects = () => {
   const projects = [
     {
@@ -224,11 +244,17 @@ const ElectronicsProjects = () => {
             {projects.map((project, index) => (
               <div key={index} className="project-card">
                 <div className="project-image">
-                  <div className="image-placeholder">
-                    <div className="image-overlay">
-                      <p>Project Image</p>
-                      <p className="image-key">Image key: {project.imageKey}</p>
-                      <p className="image-specs">Recommended: 400x250px</p>
+                  <div className="project-image-container">
+                    <img
+                      src={projectImages[project.imageKey]}
+                      alt={project.title}
+                      className="project-img"
+                    />
+                    <div className="project-image-overlay">
+                      <div className="overlay-content">
+                        <h4>{project.title}</h4>
+                        <p>{project.duration}</p>
+                      </div>
                     </div>
                   </div>
                   <div className="project-links">
