@@ -17,9 +17,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.6;
-  color: #333;
+  color: #333333;
   overflow-x: hidden;
-  background: #fafafa;
+  background: #f4f7fb;
 }
 
 code {
@@ -57,7 +57,7 @@ code {
 
 /* Selection Styling */
 ::selection {
-  background: #e8f0fe;
+  background: #eef1f8;
   color: #1a365d;
 }
 
@@ -68,6 +68,7 @@ input:focus,
 textarea:focus {
   outline: 2px solid #2c5282;
   outline-offset: 2px;
+  box-shadow: 0 0 0 3px rgba(44, 82, 130, 0.12);
 }
 
 /* Common container */

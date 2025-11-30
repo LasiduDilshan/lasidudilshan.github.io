@@ -1,13 +1,13 @@
 .contact-page {
   padding: 100px 20px 60px;
   min-height: 100vh;
-  background: #fafafa;
+  background: #f4f7fb;
 }
 
 .page-title {
   font-size: 2.5rem;
   font-weight: 600;
-  color: #1a1a1a;
+  color: #212121;
   margin-bottom: 3rem;
   text-align: center;
 }
@@ -24,8 +24,9 @@
   background: white;
   padding: 2rem;
   border-radius: 8px;
-  border: 1px solid #eee;
+  border: 1px solid #e0e0e0;
   text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 .contact-item h3 {
@@ -35,7 +36,7 @@
 }
 
 .contact-item a {
-  color: #333;
+  color: #333333;
   text-decoration: none;
   font-size: 1rem;
 }
@@ -45,7 +46,7 @@
 }
 
 .contact-item p {
-  color: #333;
+  color: #333333;
   font-size: 1rem;
   margin: 0;
 }

@@ -1,13 +1,13 @@
 .experience-page {
   padding: 100px 0 60px;
   min-height: 100vh;
-  background: #fafafa;
+  background: #f4f7fb;
 }
 
 .page-title {
   font-size: 2.5rem;
   font-weight: 600;
-  color: #1a1a1a;
+  color: #212121;
   margin-bottom: 3rem;
   text-align: center;
 }
@@ -24,13 +24,14 @@
   background: white;
   padding: 2.5rem;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e0e0e0;
 }
 
 .experience-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
 .exp-header {
@@ -45,7 +46,7 @@
 .exp-header h2 {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #1a1a1a;
+  color: #212121;
   margin: 0 0 0.3rem 0;
 }
 
@@ -58,12 +59,12 @@
 
 .duration {
   font-size: 0.9rem;
-  color: #777;
+  color: #999999;
 }
 
 .exp-content p {
   font-size: 0.95rem;
-  color: #555;
+  color: #555555;
   line-height: 1.6;
   margin-bottom: 1.5rem;
 }
@@ -71,7 +72,7 @@
 .exp-content h4 {
   font-size: 1rem;
   font-weight: 600;
-  color: #1a1a1a;
+  color: #212121;
   margin-top: 1.5rem;
   margin-bottom: 0.8rem;
 }
@@ -85,7 +86,7 @@
 
 .tech-tags span {
   padding: 0.4rem 0.8rem;
-  background: #e8f0fe;
+  background: #eef1f8;
   color: #2c5282;
   border-radius: 6px;
   font-size: 0.8rem;
@@ -100,7 +101,7 @@
 
 .exp-content li {
   font-size: 0.95rem;
-  color: #555;
+  color: #555555;
   margin-bottom: 0.5rem;
   padding-left: 1.2rem;
   position: relative;
@@ -117,7 +118,7 @@
 
 .experience-card > p {
   font-size: 0.95rem;
-  color: #555;
+  color: #555555;
   line-height: 1.6;
 }
 
