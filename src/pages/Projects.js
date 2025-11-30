@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import "./Projects.css";
 
 const Projects = () => {
-  const [activeTab, setActiveTab] = useState("all");
+  const [selectedCategory, setSelectedCategory] = useState("all");
 
-  const softwareProjects = [
+  const projects = [
     {
       title: "SL-Paddy",
       duration: "Jan 2025 - Jun 2025",
@@ -31,7 +31,7 @@ const Projects = () => {
       github: "https://github.com/LasiduDilshan/IOT-Fire-Monitoring-System.git",
       tech: ["React.js", "Node.js", "Socket.IO", "IoT"],
       description: "Real-time fire detection with administrative dashboard.",
-      category: "software",
+      category: "iot",
     },
     {
       title: "Flower Trading System",
@@ -51,16 +51,13 @@ const Projects = () => {
         "Medication management system with environmental monitoring.",
       category: "software",
     },
-  ];
-
-  const electronicsProjects = [
     {
       title: "SDR Communication System",
       duration: "Aug 2023 - Dec 2023",
       github: "https://github.com/LasiduDilshan/Software-Defined-Radio",
       tech: ["GNU Radio", "Python", "BladeRF"],
       description: "End-to-end communication system with voice modules.",
-      category: "electronics",
+      category: "telecommunications",
     },
     {
       title: "Battery Management System",
@@ -93,7 +90,7 @@ const Projects = () => {
       tech: ["Python", "NumPy", "Signal Processing"],
       description:
         "Noise reduction using Gaussian Mixture Models (35% SNR improvement).",
-      category: "electronics",
+      category: "signal processing",
     },
     {
       title: "Digital Circuit Design",
@@ -113,39 +110,31 @@ const Projects = () => {
     },
   ];
 
-  const allProjects = [...softwareProjects, ...electronicsProjects];
-
   const filteredProjects =
-    activeTab === "all"
-      ? allProjects
-      : activeTab === "software"
-      ? softwareProjects
-      : electronicsProjects;
+    selectedCategory === "all"
+      ? projects
+      : projects.filter((project) => project.category === selectedCategory);
 
   return (
     <div className="projects-page">
       <div className="container">
         <h1 className="page-title">Projects</h1>
 
-        <div className="filter-tabs">
-          <button
-            className={`tab ${activeTab === "all" ? "active" : ""}`}
-            onClick={() => setActiveTab("all")}
+        <div className="filter-dropdown">
+          <label htmlFor="category-select">Filter by Category:</label>
+          <select
+            id="category-select"
+            value={selectedCategory}
+            onChange={(e) => setSelectedCategory(e.target.value)}
           >
-            All
-          </button>
-          <button
-            className={`tab ${activeTab === "software" ? "active" : ""}`}
-            onClick={() => setActiveTab("software")}
-          >
-            Software
-          </button>
-          <button
-            className={`tab ${activeTab === "electronics" ? "active" : ""}`}
-            onClick={() => setActiveTab("electronics")}
-          >
-            Electronics
-          </button>
+            <option value="all">All Projects</option>
+            <option value="software">Software</option>
+            <option value="electronics">Electronics</option>
+            <option value="iot">IoT</option>
+            <option value="telecommunications">Telecommunications</option>
+            <option value="signal processing">Signal Processing</option>
+            <option value="machine learning">Machine Learning</option>
+          </select>
         </div>
 
         <div className="projects-grid">
