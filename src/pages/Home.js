@@ -64,23 +64,37 @@ const Home = () => {
           <h3>Technical Focus</h3>
           <div className="focus-grid">
             <div className="focus-item">
-              <h4>Signal Processing</h4>
-              <p>
-                Digital signal processing, noise reduction algorithms,
-                communication systems.
-              </p>
-            </div>
-            <div className="focus-item">
               <h4>Software Development</h4>
               <p>
                 Full-stack web applications using MERN stack, cloud deployment.
               </p>
             </div>
             <div className="focus-item">
-              <h4>Embedded Systems</h4>
+              <h4>Electronics</h4>
               <p>
-                IoT solutions, microcontroller programming, FPGA development.
+                Analog/Digital circuit design, PCB design, FPGA development.
               </p>
+            </div>
+            <div className="focus-item">
+              <h4>IoT</h4>
+              <p>IoT solutions, embedded systems, sensor integration.</p>
+            </div>
+            <div className="focus-item">
+              <h4>Telecommunications</h4>
+              <p>
+                Communication systems, software-defined radio, wireless systems.
+              </p>
+            </div>
+            <div className="focus-item">
+              <h4>Signal Processing</h4>
+              <p>
+                Digital signal processing, noise reduction algorithms, data
+                analysis.
+              </p>
+            </div>
+            <div className="focus-item">
+              <h4>Machine Learning</h4>
+              <p>Deep learning, generative AI, predictive modeling.</p>
             </div>
           </div>
 
