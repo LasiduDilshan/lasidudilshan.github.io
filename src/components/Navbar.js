@@ -27,13 +27,8 @@ const Navbar = () => {
 
   const navItems = [
     { path: "/", label: "Home" },
-    { path: "/about", label: "About" },
-    { path: "/education", label: "Education" },
     { path: "/experience", label: "Experience" },
-    { path: "/electronics-projects", label: "Electronics Projects" },
-    { path: "/software-projects", label: "Software Projects" },
-    { path: "/skills", label: "Skills" },
-    { path: "/certifications", label: "Certifications" },
+    { path: "/projects", label: "Projects" },
     { path: "/contact", label: "Contact" },
   ];
 

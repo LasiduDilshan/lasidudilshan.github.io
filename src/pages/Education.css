@@ -1,535 +1,155 @@
-/* Education Page Styles */
 .education-page {
-  padding-top: 180px;
+  padding: 100px 0 60px;
   min-height: 100vh;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-.education-hero {
-  text-align: center;
-  padding: 4rem 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  margin: 0 -2rem;
-  margin-top: -80px;
-  padding-top: 160px;
+  background: #fafafa;
 }
 
 .page-title {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-.page-subtitle {
-  font-size: 1.3rem;
-  opacity: 0.9;
-  font-weight: 300;
-}
-
-.section-title {
   font-size: 2.5rem;
-  font-weight: 700;
-  text-align: center;
+  font-weight: 600;
+  color: #1a1a1a;
   margin-bottom: 3rem;
-  color: #333;
-  position: relative;
+  text-align: center;
 }
 
-.section-title::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 4px;
-  background: linear-gradient(90deg, #667eea, #764ba2);
-  border-radius: 2px;
-}
-
-/* University Education Section */
-.university-education {
-  padding: 4rem 0;
+.education-section {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .education-card {
   background: white;
-  border-radius: 20px;
-  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  margin-bottom: 2rem;
-  transition: all 0.3s ease;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-.education-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.15);
-}
-
-.main-education {
-  border-top: 6px solid;
-  border-image: linear-gradient(90deg, #667eea, #764ba2) 1;
-}
-
-.education-header {
+.edu-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 2.5rem 2.5rem 1.5rem;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-}
-
-.institution-info h2,
-.institution-info h3 {
-  color: #333;
-  margin-bottom: 0.5rem;
-  font-weight: 700;
-}
-
-.institution-info h2 {
-  font-size: 1.8rem;
-}
-
-.institution-info h3 {
-  font-size: 1.4rem;
-}
-
-.location,
-.duration {
-  color: #666;
-  margin: 0.3rem 0;
-  font-size: 0.95rem;
-}
-
-.cgpa-badge,
-.grade-badge {
-  text-align: center;
-  padding: 1rem 1.5rem;
-  border-radius: 15px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
-}
-
-.cgpa-number,
-.grade-number {
-  display: block;
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 1;
-}
-
-.cgpa-label,
-.grade-label {
-  display: block;
-  font-size: 0.85rem;
-  opacity: 0.9;
-  margin-top: 0.3rem;
-}
-
-.al-badge {
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-}
-
-.ol-badge {
-  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-}
-
-.degree-info {
-  padding: 1.5rem 2.5rem;
-}
-
-.degree-info h3 {
-  color: #333;
-  font-size: 1.3rem;
   margin-bottom: 1rem;
-  font-weight: 600;
-}
-
-.transcript-link,
-.result-link {
-  color: #667eea;
-  text-decoration: none;
-  font-weight: 600;
-  padding: 0.5rem 1rem;
-  border: 2px solid #667eea;
-  border-radius: 25px;
-  display: inline-block;
-  transition: all 0.3s ease;
-  font-size: 0.9rem;
-}
-
-.transcript-link:hover,
-.result-link:hover {
-  background: #667eea;
-  color: white;
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
-}
-
-/* Coursework Section */
-.coursework {
-  padding: 1.5rem 2.5rem;
-  background: #f8f9fa;
-}
-
-.coursework h4 {
-  color: #333;
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-
-.course-tags {
-  display: flex;
   flex-wrap: wrap;
-  gap: 0.8rem;
+  gap: 0.5rem;
 }
 
-.course-tag {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-
-.course-tag:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
-}
-
-/* Achievements Section */
-.achievements {
-  padding: 1.5rem 2.5rem 2.5rem;
-}
-
-.achievements h4 {
-  color: #333;
-  margin-bottom: 1.5rem;
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-
-.achievement-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.achievement-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  padding: 1rem;
-  background: white;
-  border-radius: 10px;
-  border-left: 4px solid #667eea;
-}
-
-.achievement-icon {
+.edu-header h2 {
   font-size: 1.5rem;
-  margin-top: 0.2rem;
-}
-
-.achievement-content h5 {
-  color: #333;
-  font-size: 1rem;
   font-weight: 600;
-  margin-bottom: 0.3rem;
-}
-
-.achievement-content p {
-  color: #666;
-  font-size: 0.9rem;
-  line-height: 1.5;
+  color: #1a1a1a;
   margin: 0;
 }
 
-/* Pre-University Section */
-.pre-university {
-  padding: 4rem 0;
-  background: #f8f9fa;
-  margin: 0 -2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+.duration {
+  font-size: 0.9rem;
+  color: #777;
 }
 
-.education-timeline {
-  max-width: 800px;
-  margin: 0 auto;
+.education-card h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #2c5282;
+  margin-bottom: 1rem;
 }
 
-.education-details {
-  padding: 1.5rem 2.5rem 2.5rem;
-}
-
-.result-highlight {
-  margin-bottom: 1.5rem;
-}
-
-.result-tag {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  font-size: 0.85rem;
+.cgpa {
+  font-size: 1.1rem;
+  color: #2c5282;
   font-weight: 600;
-  margin-right: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
-.result-tag.excellent {
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-  color: white;
+.results {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
 }
 
-.result-tag.rank {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-}
-
-.result-tag.foundation {
-  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-  color: white;
+.grade,
+.rank,
+.zscore {
+  font-size: 0.95rem;
+  color: #555;
+  font-weight: 500;
 }
 
 .subjects {
-  margin: 1.5rem 0;
-}
-
-.subjects h4 {
-  color: #333;
-  margin-bottom: 1rem;
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-.subject-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.8rem;
-}
-
-.subject-tag {
-  background: #e9ecef;
-  color: #495057;
-  padding: 0.5rem 1rem;
-  border-radius: 15px;
-  font-size: 0.85rem;
-  font-weight: 500;
-}
-
-/* Academic Projects Section */
-.academic-projects {
-  padding: 4rem 0;
-}
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-}
-
-.project-card {
-  background: white;
-  padding: 2rem;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
-  border-top: 4px solid transparent;
-  background-image: linear-gradient(white, white),
-    linear-gradient(135deg, #667eea, #764ba2);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
-}
-
-.project-card h3 {
-  color: #333;
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-}
-
-.project-status {
-  color: #667eea;
-  font-size: 0.85rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-
-.project-card p:last-child {
+  font-size: 0.95rem;
   color: #666;
-  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.transcript-link {
+  display: inline-block;
+  color: #2c5282;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.transcript-link:hover {
+  text-decoration: underline;
+}
+
+.achievements-list {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #eee;
+}
+
+.achievements-list h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 0.8rem;
+}
+
+.achievements-list ul {
+  list-style: none;
+  padding: 0;
   margin: 0;
 }
 
-/* Skills Developed Section */
-.skills-developed {
-  padding: 4rem 0;
-  background: #f8f9fa;
-  margin: 0 -2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.skills-categories {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-}
-
-.skill-category {
-  background: white;
-  padding: 2rem;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-}
-
-.skill-category h3 {
-  color: #333;
-  font-size: 1.3rem;
-  margin-bottom: 1.5rem;
-  font-weight: 600;
-  text-align: center;
-  position: relative;
-}
-
-.skill-category h3::after {
-  content: "";
-  position: absolute;
-  bottom: -8px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 40px;
-  height: 2px;
-  background: linear-gradient(90deg, #667eea, #764ba2);
-  border-radius: 1px;
-}
-
-.skill-category ul {
-  list-style: none;
-  padding: 0;
-}
-
-.skill-category li {
+.achievements-list li {
+  font-size: 0.95rem;
   color: #555;
-  padding: 0.5rem 0;
-  border-bottom: 1px solid #eee;
+  margin-bottom: 0.5rem;
+  padding-left: 1.2rem;
   position: relative;
-  padding-left: 1.5rem;
 }
 
-.skill-category li:last-child {
-  border-bottom: none;
-}
-
-.skill-category li::before {
-  content: "▸";
+.achievements-list li::before {
+  content: "•";
   position: absolute;
   left: 0;
-  color: #667eea;
+  color: #2c5282;
   font-weight: bold;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .education-page {
-    padding-top: 160px;
+    padding: 80px 0 40px;
   }
 
   .page-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
-  .education-header {
+  .education-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .edu-header {
     flex-direction: column;
-    gap: 1rem;
-    text-align: center;
+    gap: 0.3rem;
   }
 
-  .cgpa-badge,
-  .grade-badge {
-    align-self: center;
-  }
-
-  .coursework,
-  .achievements,
-  .education-details {
-    padding: 1.5rem;
-  }
-
-  .course-tags,
-  .subject-list {
-    justify-content: center;
-  }
-
-  .achievement-item {
-    text-align: left;
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .skills-categories {
-    grid-template-columns: 1fr;
-  }
-
-  .section-title {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .container {
-    padding: 0 1rem;
-  }
-
-  .education-hero {
-    margin: 0 -1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .pre-university,
-  .skills-developed {
-    margin: 0 -1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .page-title {
-    font-size: 2rem;
-  }
-
-  .education-header {
-    padding: 1.5rem;
-  }
-
-  .cgpa-number,
-  .grade-number {
-    font-size: 1.5rem;
-  }
-
-  .course-tags {
-    gap: 0.5rem;
-  }
-
-  .course-tag {
-    font-size: 0.8rem;
-    padding: 0.4rem 0.8rem;
+  .edu-header h2 {
+    font-size: 1.3rem;
   }
 }

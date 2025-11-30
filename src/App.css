@@ -7,14 +7,15 @@
 
 body {
   margin: 0;
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.6;
   color: #333;
   overflow-x: hidden;
+  background: #fafafa;
 }
 
 code {
@@ -42,24 +43,18 @@ code {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #2c5282;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  background: #1a365d;
 }
 
 /* Selection Styling */
 ::selection {
-  background: rgba(102, 126, 234, 0.3);
-  color: #333;
-}
-
-/* Smooth Animations */
-* {
-  transition: color 0.3s ease, background-color 0.3s ease,
-    border-color 0.3s ease, opacity 0.3s ease;
+  background: #e8f0fe;
+  color: #1a365d;
 }
 
 /* Focus States */
@@ -67,22 +62,19 @@ a:focus,
 button:focus,
 input:focus,
 textarea:focus {
-  outline: 2px solid #667eea;
+  outline: 2px solid #2c5282;
   outline-offset: 2px;
 }
 
-/* Loading Animation */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* Common container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
-.fade-in {
-  animation: fadeIn 0.6s ease-out forwards;
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
 }
