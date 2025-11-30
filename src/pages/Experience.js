@@ -46,6 +46,37 @@ const Experience = () => {
           <div className="experience-card">
             <div className="exp-header">
               <div>
+                <h2>Visiting Instructor</h2>
+                <h3>
+                  Department of Electronic & Telecommunication Engineering -
+                  University of Moratuwa
+                </h3>
+              </div>
+              <span className="duration">Sep 2025 - Present</span>
+            </div>
+            <p>
+              Conducted laboratory sessions for EN 2091 Laboratory Practice and
+              Projects (90 hours).
+            </p>
+          </div>
+
+          <div className="experience-card">
+            <div className="exp-header">
+              <div>
+                <h2>Web Developer</h2>
+                <h3>Electronic Club - ENTC</h3>
+              </div>
+              <span className="duration">May 2025 - Present</span>
+            </div>
+            <p>
+              Main developer for Web Development Branch. Developed Career Fair
+              application and ENTC website.
+            </p>
+          </div>
+
+          <div className="experience-card">
+            <div className="exp-header">
+              <div>
                 <h2>Sub-Editor</h2>
                 <h3>IEEE Communications Society - University of Moratuwa</h3>
               </div>
@@ -53,6 +84,19 @@ const Experience = () => {
             </div>
             <p>
               Technical content creation and editorial work for IEEE ComSoc.
+            </p>
+          </div>
+
+          <div className="experience-card">
+            <div className="exp-header">
+              <div>
+                <h2>Analog Laboratory Demonstrator</h2>
+                <h3>EXMO 2023 - University of Moratuwa</h3>
+              </div>
+              <span className="duration">Jul 2024</span>
+            </div>
+            <p>
+              Assisted students with analog electronics laboratory sessions.
             </p>
           </div>
 
@@ -67,19 +111,6 @@ const Experience = () => {
             <p>
               Organized SLRC 2024 (Logistics Committee) and ENTC Career Fair
               2024.
-            </p>
-          </div>
-
-          <div className="experience-card">
-            <div className="exp-header">
-              <div>
-                <h2>Analog Laboratory Demonstrator</h2>
-                <h3>EXMO 2023 - University of Moratuwa</h3>
-              </div>
-              <span className="duration">Jul 2024</span>
-            </div>
-            <p>
-              Assisted students with analog electronics laboratory sessions.
             </p>
           </div>
         </section>

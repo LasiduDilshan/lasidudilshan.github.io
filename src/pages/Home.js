@@ -15,10 +15,11 @@ const Home = () => {
           </div>
           <h1>Lasidu Dilshan</h1>
           <h2>Electronic & Telecommunication Engineering Student</h2>
-          <p className="intro">
-            University of Moratuwa | Software Engineering Intern at OeilSat LLC
-          </p>
+          <p className="intro">Final Year | University of Moratuwa</p>
           <div className="cta-buttons">
+            <Link to="/experience" className="btn-primary">
+              Experience
+            </Link>
             <Link to="/projects" className="btn-primary">
               Projects
             </Link>
@@ -52,13 +53,13 @@ const Home = () => {
         <div className="container">
           <h2>About</h2>
           <p>
-            Electronic and Telecommunication Engineering student at University
-            of Moratuwa, Sri Lanka. CGPA: 3.97/4.0
+            Final year Electronic and Telecommunication Engineering student at
+            University of Moratuwa, Sri Lanka. CGPA: 3.97/4.0
           </p>
           <p>
-            Currently working as Software Engineering Intern at OeilSat LLC,
-            focusing on full-stack development with React, Node.js, and
-            Microsoft Azure.
+            Experienced in full-stack development, IoT solutions, signal
+            processing, and telecommunications systems. Completed internship at
+            OeilSat LLC working with React, Node.js, and Microsoft Azure.
           </p>
 
           <h3>Technical Focus</h3>
