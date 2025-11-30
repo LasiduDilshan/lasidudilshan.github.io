@@ -10,14 +10,14 @@ const Contact = () => {
         <section className="contact-info">
           <div className="contact-item">
             <h3>Email</h3>
-            <a href="mailto:lasidudilshan03@gmail.com">
-              lasidudilshan03@gmail.com
+            <a href="mailto:dilshanlasindu0@gmail.com">
+              dilshanlasindu0@gmail.com
             </a>
           </div>
 
           <div className="contact-item">
             <h3>Phone</h3>
-            <a href="tel:+94768604031">+94 76 860 4031</a>
+            <a href="tel:+94750461152">+94 75 046 1152</a>
           </div>
 
           <div className="contact-item">
@@ -28,7 +28,7 @@ const Contact = () => {
           <div className="contact-item">
             <h3>LinkedIn</h3>
             <a
-              href="https://linkedin.com/in/lasidu-dilshan"
+              href="https://www.linkedin.com/in/lasidu-dilshan-236368268/"
               target="_blank"
               rel="noopener noreferrer"
             >
