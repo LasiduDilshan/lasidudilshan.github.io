@@ -32,18 +32,22 @@ const Home = () => {
 
       <section className="summary">
         <div className="container">
+          <h2>Guiding Principles</h2>
+          <p className="summary-intro">
+            A few reminders I keep close while learning, building, and working with others.
+          </p>
           <div className="stats">
             <div className="stat">
-              <span className="number">3.97</span>
-              <span className="label">CGPA</span>
+              <span className="pill">Curiosity-led</span>
+              <p>Asking questions early, leaning on mentors, and sharing what I learn.</p>
             </div>
             <div className="stat">
-              <span className="number">12+</span>
-              <span className="label">Projects</span>
+              <span className="pill">Hands-on</span>
+              <p>Building with supportive teams and shipping small, frequent improvements.</p>
             </div>
             <div className="stat">
-              <span className="number">8+</span>
-              <span className="label">Certifications</span>
+              <span className="pill">Always learning</span>
+              <p>Strengthening fundamentals with courses, feedback, and practice.</p>
             </div>
           </div>
         </div>

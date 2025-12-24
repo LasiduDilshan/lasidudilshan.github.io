@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import "./Projects.css";
 
 const Projects = () => {
@@ -7,14 +6,40 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "SL-Paddy",
+      title: "Multi-hop LoRa Mesh Network (Post-Disaster)",
+      duration: "2025 - Present",
+      tech: ["LoRa", "ESP32", "OMNeT++ 5.3", "INET 3.7.1", "FLoRa", "BLE", "GPS"],
+      description:
+        "Disaster-resilient multi-hop LoRa messaging for victim-rescuer comms, DMC links, and SHM payloads; comparing flooding/AODV options and prototyping ESP32 LoRa nodes with fragmentation, ARQ, and an offline BLE/GPS dashboard.",
+      category: "iot",
+    },
+    {
+      title: "SL-PADDY: Agricultural Remote Sensing Platform",
       duration: "Jan 2025 - Jun 2025",
       github: "https://github.com/LasiduDilshan/SL-Paddy",
       live: "https://icy-plant-038eed50f.6.azurestaticapps.net/",
-      tech: ["React.js", "Node.js", "MongoDB", "Azure"],
+      tech: ["React.js", "Node.js", "MongoDB", "Azure", "Maps"],
       description:
-        "Agricultural remote sensing platform for real-time monitoring.",
+        "Full-stack geospatial platform for Sri Lankan paddy fields with polygon analytics (NDVI/RVI trends, yield estimates), saved views, and Azure-backed data pipelines.",
       category: "software",
+    },
+    {
+      title: "ThermoSight: Transformer Inspection Platform",
+      duration: "Jul 2025 - Dec 2025",
+      github: "https://github.com/LasiduDilshan/transformer-image-manager-4",
+      tech: ["React", "Spring Boot", "PostgreSQL", "PatchCore", "Hugging Face", "JWT"],
+      description:
+        "Transformer asset and inspection platform with hosted PatchCore anomaly detection, canvas annotations, and role-based access built with React, Spring Boot, and PostgreSQL.",
+      category: "software",
+    },
+    {
+      title: "ThermoSight Anomaly Detection (Hugging Face)",
+      duration: "Jul 2025 - Dec 2025",
+      live: "https://huggingface.co/spaces/Lasidu/automatic-anamoly-detection",
+      tech: ["PatchCore", "Hugging Face Spaces", "Python", "Queueing"],
+      description:
+        "Humble add-on for ThermoSight: queues transformer maintenance images for PatchCore analysis, polls status, and serves boxed outputs plus JSON results via the Hugging Face Space.",
+      category: "machine learning",
     },
     {
       title: "DailyReadNest",
@@ -22,7 +47,7 @@ const Projects = () => {
       github: "https://github.com/LasiduDilshan/DailyReadNest.git",
       tech: ["React.js", "Node.js", "MongoDB", "Express.js"],
       description:
-        "Blogging platform with user authentication and social features.",
+        "MERN blogging platform with JWT authentication, profiles, and protected blog CRUD plus comments.",
       category: "software",
     },
     {
@@ -30,7 +55,8 @@ const Projects = () => {
       duration: "Nov 2024 - Dec 2024",
       github: "https://github.com/LasiduDilshan/IOT-Fire-Monitoring-System.git",
       tech: ["React.js", "Node.js", "Socket.IO", "IoT"],
-      description: "Real-time fire detection with administrative dashboard.",
+      description:
+        "IoT fire monitoring with MQTT telemetry, instant alarms, and a React/Node dashboard; includes custom PCB and enclosure.",
       category: "iot",
     },
     {
@@ -38,7 +64,8 @@ const Projects = () => {
       duration: "Nov 2024",
       github: "https://github.com/LasiduDilshan/flower_exchange_with_ui.git",
       tech: ["C++", "Multithreading", "CSV Processing"],
-      description: "Trading platform with order matching algorithm.",
+      description:
+        "C++ trading platform that ingests CSV orders, handles partial fills, rejects invalid orders, and logs matches in real time.",
       category: "software",
     },
     {
@@ -48,7 +75,7 @@ const Projects = () => {
         "https://github.com/LasiduDilshan/Medibox-Project-for-Embedded-Systems-Module",
       tech: ["Node-RED", "IoT", "Cloud"],
       description:
-        "Medication management system with environmental monitoring.",
+        "Medication reminders, environment monitoring, and cloud connectivity built with Node-RED and simple patient UI.",
       category: "software",
     },
     {
@@ -56,16 +83,17 @@ const Projects = () => {
       duration: "Aug 2023 - Dec 2023",
       github: "https://github.com/LasiduDilshan/Software-Defined-Radio",
       tech: ["GNU Radio", "Python", "BladeRF"],
-      description: "End-to-end communication system with voice modules.",
+      description:
+        "End-to-end SDR with BladeRF and GNU Radio: BPSK data path with FEC plus NBFM audio streaming; custom Python blocks for sync and error checks.",
       category: "telecommunications",
     },
     {
       title: "Battery Management System",
-      duration: "Mar 2024 - Present",
+      duration: "Mar 2024 - Sep 2024",
       github: "https://github.com/LasiduDilshan/EDR_project",
       tech: ["C++", "AVR", "PCB Design", "IoT"],
       description:
-        "Expandable BMS for Li-ion cells with Master-Slave architecture.",
+        "Modular Li-ion BMS using a master-slave architecture with voltage/current/temp sensing, active balancing, and AVR firmware plus PCB design.",
       category: "electronics",
     },
     {
@@ -73,7 +101,8 @@ const Projects = () => {
       duration: "Sep 2023 - Dec 2023",
       github: "https://github.com/LasiduDilshan/High-Frequency-Amplifier",
       tech: ["Analog Electronics", "PCB Design", "Altium"],
-      description: "Precision amplifier for 20kHz-200kHz range.",
+      description:
+        "Two-stage analog amplifier (common-emitter + Class-AB push-pull) designed, laid out, and validated for low-distortion 20kHz-100kHz output on an 8 ohm load.",
       category: "electronics",
     },
     {
@@ -81,15 +110,17 @@ const Projects = () => {
       duration: "May 2024",
       github: "https://github.com/LasiduDilshan/UART-using-Verilog",
       tech: ["Verilog", "FPGA", "Quartus Prime"],
-      description: "UART communication system implementation.",
+      description:
+        "UART transmitter, receiver, and baud generator in Verilog; verified in ModelSim and on DE0-Nano hardware.",
       category: "electronics",
     },
     {
-      title: "Signal Denoising - GMM",
+      title: "GMM-Based Speech Enhancement",
       duration: "Jun 2025",
+      github: "https://github.com/LasiduDilshan/GMM-AudioDenoise.git",
       tech: ["Python", "NumPy", "Signal Processing"],
       description:
-        "Noise reduction using Gaussian Mixture Models (35% SNR improvement).",
+        "Speech enhancement using GMM noise models and STFT log-PSD features with NNLS estimation and Wiener-style smoothing; Python pipeline for batch mixes and exports.",
       category: "signal processing",
     },
     {
@@ -101,11 +132,12 @@ const Projects = () => {
       category: "electronics",
     },
     {
-      title: "Water Detector",
+      title: "Turbidity-Based Water Detector (Turbi Detector)",
       duration: "Mar 2023 - May 2023",
       github: "https://github.com/LasiduDilshan/Turbi-Detector",
       tech: ["IoT", "Mobile App", "Sensors"],
-      description: "Contaminant detection with automatic flow diversion.",
+      description:
+        "Turbidity detector using IR sensing to flag contaminated flow, trigger diversion, and push ESP8266-based remote alerts; includes PCB and enclosure integration.",
       category: "electronics",
     },
   ];
@@ -183,24 +215,48 @@ const Projects = () => {
           <h2>Skills</h2>
           <div className="skills-grid">
             <div className="skill-category">
-              <h3>Programming</h3>
+              <h3>Languages</h3>
+              <p>English (professional proficiency), Sinhala (native proficiency)</p>
+            </div>
+            <div className="skill-category">
+              <h3>Programming Languages</h3>
               <p>Python, C/C++, JavaScript, MATLAB, Verilog</p>
             </div>
             <div className="skill-category">
-              <h3>Web Development</h3>
-              <p>React.js, Node.js, Express.js, MongoDB, HTML/CSS</p>
+              <h3>Software & Systems Development</h3>
+              <p>
+                Frontend with React.js for responsive, data-driven dashboards; backend with Node.js/Express.js and Spring Boot; REST APIs with authentication and service integration; schemas and performance basics in PostgreSQL and MongoDB.
+              </p>
             </div>
             <div className="skill-category">
-              <h3>Electronics</h3>
-              <p>Analog/Digital Circuit Design, PCB Design, Embedded Systems</p>
+              <h3>Electronics & Telecommunications</h3>
+              <p>
+                Signal processing (filtering, feature extraction, noise reduction, basic statistical models); wireless comms with LoRa mesh, SDR paths, and digital/analog modulation techniques.
+              </p>
             </div>
             <div className="skill-category">
-              <h3>Tools & Platforms</h3>
-              <p>Git, Docker, GNU Radio, Altium, ModelSim, Quartus Prime</p>
+              <h3>Embedded & Digital Systems</h3>
+              <p>
+                AVR and ESP32 firmware, UART and peripheral interfaces, FPGA designs in Verilog; practical debugging across firmware and hardware bring-up.
+              </p>
+            </div>
+            <div className="skill-category">
+              <h3>Hardware Design</h3>
+              <p>Schematic capture and multi-layer PCB layout (Altium), enclosure considerations, and prototyping/validation.</p>
+            </div>
+            <div className="skill-category">
+              <h3>Tools & Simulation</h3>
+              <p>
+                GNU Radio, OMNeT++/INET/FLoRa, MATLAB/Simulink, Wireshark, ModelSim, Quartus Prime, Altium Designer, SolidWorks.
+              </p>
             </div>
             <div className="skill-category">
               <h3>Cloud & DevOps</h3>
-              <p>Microsoft Azure, Azure Static Web Apps, Azure App Service</p>
+              <p>Git-based workflows, CI/CD with GitHub Actions, and deployments on Azure (Static Web Apps, App Service) and managed services.</p>
+            </div>
+            <div className="skill-category">
+              <h3>Soft Skills</h3>
+              <p>Analytical problem solving, systematic debugging, collaborative delivery in multidisciplinary teams, and clear technical communication.</p>
             </div>
           </div>
         </section>
